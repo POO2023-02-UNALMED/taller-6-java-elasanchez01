@@ -14,11 +14,17 @@ public class Pais {
     Pais.listaPaises.add(this);
     }
 
+  public static Pais paisMasVendedor(){
+  	Pais mayor= listaPaises.get(0);
+	for (Pais pais:listaPaises){
+		////Continuacion codigo githubdesktop
+  }
+
   public void setNombre(String nombre) {
     this.nombre=nombre;
   }
   
-	public String getNombre() {
+  public String getNombre() {
     return this.nombre;
   }
 	
