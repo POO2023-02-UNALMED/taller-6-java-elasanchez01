@@ -13,14 +13,15 @@ public class Vehiculo {
 
   public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante){
     this.placa = placa;
-		this.puertas = puertas;
-		this.velocidadMaxima = velocidadMaxima;
-		this.nombre = nombre;
-		this.precio = precio;
-		this.peso = peso;
-		this.traccion = traccion;
-		this.fabricante = fabricante;
-		**Fabricante.incrementarContador(fabricante);
-		cantidadVehiculos++;
+    this.puertas=puertas;
+    this.velocidadMaxima=velocidadMaxima;
+    this.nombre=nombre;
+    this.precio=precio;
+    this.peso=peso;
+    this.traccion=traccion;
+    this.fabricante=fabricante;
+    this.fabricante.fabricar();
+    Vehiculo.cantidadVehiculos++;
+      		   	  
   }
 }
